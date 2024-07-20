@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <title>Gọi xe taxi 247 giá rẻ</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="#" class="header-background">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid d-flex justify-content-between align-self-center">
+                
+                <!-- <button class="navbar-toggler navbar-primary bg-primary" type="button" data-bs-toggle="modal" data-bs-target="exampleModal1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <button type="button" class="btn btn-primary disable-btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    <span class="text-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </span>
+                </button>
+                <a class="col-6 navbar-brand logo" href="#">
+                    <img class="" src="./img/logo.PNG" alt="logo">
+                </a>
+            
+                <div class="col-6 collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#gioithieu">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#khuvuc">Gọi Xe Taxi 247</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#xeditinh">Taxi Đi Tỉnh 247</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#tongdai">Tổng đài đặt xe nhanh</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-light mt-2 col-11 col-sm-4 form-opacity">
+            <div class="row">
+                <p class="form-title fw-bold text-light text-center">
+                    Đặt xe Trực Tuyến-Đặt Xe Đi Tỉnh giá rẻ-Đến Ngay Sau 2 Phút Đặt
+                </p>
+            </div>
+        
+            <form method="post">
+                
+                <p>Số điện thoại</p>
+                <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                </div>
+                <input type="text" class="form-control mb-3" name="" placeholder="Nhập số điện thoại" value=''>
+                <p>Điểm đón</p>
+                <div class="border border-secondary d-flex justify-content-center p-1 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </div>
+                <input type="text" class="form-control mb-3" name="" placeholder="Nhập điểm đón" value=''>
+                <p>Điểm đến</p>
+                <div class="border border-secondary d-flex justify-content-center p-1 text-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </div>
+                <input type="text" class="form-control mb-3" name="phone" placeholder="Nhập điểm đến" value=''>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Giờ đón</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 time-color">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-day" viewBox="0 0 16 16">
+                                <path d="M4.684 11.523v-2.3h2.261v-.61H4.684V6.801h2.464v-.61H4v5.332zm3.296 0h.676V8.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98zm2.805-5.093c0 .238.192.425.43.425a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43m.094 5.093h.672V7.418h-.672z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        </div>
+                        
+                        <input id="datepicker"/>
+                        <script>
+                            // Hàm để lấy thời gian hiện tại và định dạng theo chuẩn "Y-m-d H:i"
+                            function getFormattedDate() {
+                                const date = new Date();
+                                const year = date.getFullYear();
+                                const month = String(date.getMonth() + 1).padStart(2, '0');
+                                const day = String(date.getDate()).padStart(2, '0');
+                                const hours = String(date.getHours()).padStart(2, '0');
+                                const minutes = String(date.getMinutes()).padStart(2, '0');
+                                return `${year}-${month}-${day} ${hours}:${minutes}`;
+                            }
+
+                            // Thiết lập giá trị mặc định cho thẻ input
+                            document.getElementById('datepicker').value = getFormattedDate();
+                            flatpickr('#datepicker', {
+                                enableTime: true, // Cho phép chọn thời gian
+                                dateFormat: "Y-m-d H:i", // Định dạng ngày và thời gian
+                                time_24hr: true, // Định dạng giờ theo 24 giờ
+                                static: true, // Đặt input để làm input readonly
+                                locale: "vi" // Định dạng theo ngôn ngữ việt
+                            });
+                        </script>
+                        
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Loại xe</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                            </svg>
+                        </div>
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Xe 4 chỗ</option>
+                            <option value="1">Xe 5 chỗ</option>
+                            <option value="2">Xe 7 chỗ</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" class="form-control btn btn-success mt-3 mb-3" name="submit" value="Đặt xe ngay">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="contact-icons">
+        <a href="zalo://chat" class="zalo-icon"></a>
+        <a href="tel:0797933678" class="phone-icon"></a>
+    </div>
+    <!-- Modal cho navbar -->
+    <div class="modal fade col-12" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body vh-100 d-flex align-items-center">
+                    <div class="row text-center">
+                        <div class="col-12 p-3 text-secondary menu-hover">
+                            <a href="#"><h1>Trang Chủ</h1></a>
+                        </div>
+                        <div class="col-12 p-3 text-secondary menu-hover">
+                            <a href="#gioithieu"><h1>Giới thiệu</h1></a>
+                        </div>
+                        <div class="col-12 p-3 text-secondary menu-hover">
+                            <a href="#khuvuc"><h1>Gọi Xe Taxi 247</h1></a>
+                        </div>
+                        <div class="col-12 p-3 text-secondary menu-hover">
+                            <a href="#xeditinh"><h1>Taxi Đi Tỉnh 247</h1></a>
+                        </div>
+                        <div class="col-12 p-3 text-secondary menu-hover">
+                            <a href="#tongdai"><h1>Tổng đài đặt xe nhanh</h1></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Giới thiệu -->
+    <div class="bg-gioithieu d-flex justify-content-center" id="gioithieu">
+        <div class="container row">
+            <div class="col-sm-6 mt-4 mb-5">
+                <h5 class="text-center fs-5"><span style="color: #F5AA06;">GỌI XE TAXI GIÁ RẺ </span> <span style="color: green;">0797933678</span>  <span style="color: #F5AA06;">– 2 Phút Là Có Xe</span> </h5>
+                <p class="mt-2 text-center text-light fs-5">Gọi Xe Taxi 247 xin trân trọng gửi tới Quý khách hàng lời chúc sức khỏe và thành đạt trong cuộc sống.</p>
+                <p class="mt-3 text-center text-light fs-5">Gọi Xe Taxi 247 cung cấp dịch vụ xe taxi Vinasun giá rẻ – taxi Mai Linh giá rẻ , Taxi Bình Dương – Taxi Thủ Dầu Một  phục vụ 24/7, chuyên cung cấp dịch vụ xe taxi sân bay, Taxi Thuận An , Taxi Dĩ An ,Taxi đường dài trọn gói giá rẻ . Cam kết dịch vụ taxi Sân Bay, Taxi Giá Rẻ đi tỉnh đường dài, du lịch bằng dòng xe đầu tư mới 100% với các  dòng xe ôtô 4, 5, 7, 16, 28 chỗ sang trọng với chính sách giá rẻ nhất. Với kinh nghiệm hơn 20 năm lái xe, Taxi Giá Rẻ <span style="color: #F5AA06;"> cam kết </span> mang đến sự an toàn, thoải mái và chất lượng phục vụ tốt nhất an toàn và tiết kiệm. Ngoài ra chúng tôi còn cung cấp dịch vụ cho thuê xe có tài xế đường dài giá rẻ – Đặt xe 4 7 chổ đi tỉnh giá rẻ giảm 40% chi phí. Đi đúng đường an toàn của quý khách là niềm tự hào của chúng tôi</p>
+                <p class="mt-3 text-center text-light fs-5">Gọi xe vui lòng gọi Tổng Đài Taxi Giá Rẻ –</p>
+                <h5 class="mt-3 text-center" style="color: green;">0797933678</h5>
+            </div>
+            <div class="col-sm-6 mt-4 mb-5">
+                <img src="./img/Hero.jpeg" alt="" style="width: 80%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Khu vực -->
+    <div id="khuvuc" class="d-flex justify-content-center mb-5">
+        <div class="container row">
+            <div class="text-center mt-4 mb-3">
+                <h3 style="color: #eac289;">BẠN MUỐN ĐẶT XE Ở KHU VỰC NÀO?</h3>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/binhduong.jpg);">
+                <h5 class="mt-4 text-light">Bình Dương</h5>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/Thu-Dau-Mot-.jpg);">
+                <h5 class="mt-4 text-light">Thủ Dầu Một</h5>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/quận7.jpg);">
+                <h5 class="mt-4 text-light">Quận 7</h5>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/tpthuduc.jpg);">
+                <h5 class="mt-4 text-light">TP Thủ Đức</h5>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/quận7.jpg);">
+                <h5 class="mt-4 text-light">Sài Gòn</h5>
+            </div>
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-sm-4 border border-2 border-white area-height" style="background-image: url(./img/area/quan2.jpg);">
+                <h5 class="mt-4 text-light">Quận 2</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Area Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">  
+            <div class="modal-body">
+                <div class="container-fluid bg-light mt-2 form-opacity">
+                    <div class="row">
+                        <p class="form-title fw-bold text-light text-center">
+                            Đặt xe Trực Tuyến-Đặt Xe Đi Tỉnh giá rẻ-Đến Ngay Sau 2 Phút Đặt
+                        </p>
+                    </div>
+                
+                    <form method="post">
+                        <p>Số điện thoại</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="" placeholder="Nhập số điện thoại" value=''>
+                        <p>Điểm đón</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="" placeholder="Nhập điểm đón" value=''>
+                        <p>Điểm đến</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-danger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="phone" placeholder="Nhập điểm đến" value=''>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Giờ đón</p>
+                                <div class="border border-secondary d-flex justify-content-center p-1 time-color">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-day" viewBox="0 0 16 16">
+                                        <path d="M4.684 11.523v-2.3h2.261v-.61H4.684V6.801h2.464v-.61H4v5.332zm3.296 0h.676V8.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98zm2.805-5.093c0 .238.192.425.43.425a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43m.094 5.093h.672V7.418h-.672z"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                                    </svg>
+                                </div>
+                                
+                                <input id="datepicker1"/>
+                                <script>
+                                    // Hàm để lấy thời gian hiện tại và định dạng theo chuẩn "Y-m-d H:i"
+                                    function getFormattedDate() {
+                                        const date = new Date();
+                                        const year = date.getFullYear();
+                                        const month = String(date.getMonth() + 1).padStart(2, '0');
+                                        const day = String(date.getDate()).padStart(2, '0');
+                                        const hours = String(date.getHours()).padStart(2, '0');
+                                        const minutes = String(date.getMinutes()).padStart(2, '0');
+                                        return `${year}-${month}-${day} ${hours}:${minutes}`;
+                                    }
+        
+                                    // Thiết lập giá trị mặc định cho thẻ input
+                                    document.getElementById('datepicker1').value = getFormattedDate();
+                                    flatpickr('#datepicker1', {
+                                        enableTime: true, // Cho phép chọn thời gian
+                                        dateFormat: "Y-m-d H:i", // Định dạng ngày và thời gian
+                                        time_24hr: true, // Định dạng giờ theo 24 giờ
+                                        static: true, // Đặt input để làm input readonly
+                                        locale: "vi" // Định dạng theo ngôn ngữ việt
+                                    });
+                                </script>
+                                
+                                
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Loại xe</p>
+                                <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                                    </svg>
+                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>Xe 4 chỗ</option>
+                                    <option value="1">Xe 5 chỗ</option>
+                                    <option value="2">Xe 7 chỗ</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="form-control btn btn-success mt-3 mb-3" name="submit" value="Đặt xe ngay">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Xe Đi Tỉnh -->
+    <div id="xeditinh" class="d-flex justify-content-center xeditinh-background">
+        <div class="container row">
+            <div class="text-center mt-4 mb-3">
+                <h3 style="color: #eac289;">BẢNG GIÁ THUÊ XE ĐI TỈNH</h3>
+            </div>
+            <div class="col-sm-6 mb-4 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-VT.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style1">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h5 class="text-center" style="color: yellow;">Giảm giá khi đặt trước</h5>
+                    <h6>SÀI GÒN <=> VŨNG TÀU</h6>
+                    <h6>Giá 1,050,000đ/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-MT.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style1">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h5 class="text-center" style="color: yellow;">Giảm giá khi đặt trước</h5>
+                    <h6>Sài Gòn <=> Miền Tây</h6>
+                    <h6>Giá 1,050,000đ/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+
+            <div class="col-sm-4 mb-4 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/BD-DL.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style2">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h5 class="text-center" style="color: yellow;">Giảm giá khi đặt trước</h5>
+                    <h6>Bình Dương <=> Đà Lạt</h6>
+                    <h6>Giá 2500k/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-BD.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style2">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h5 class="text-center" style="color: yellow;">Giảm giá khi đặt trước</h5>
+                    <h6>Sài Gòn <=> Bình Dương</h6>
+                    <h6>Giá 500k/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-4 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/BD-CC.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style2">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h5 class="text-center" style="color: yellow;">Giảm giá khi đặt trước</h5>
+                    <h6>Bình Dương <=> Củ Chi</h6>
+                    <h6>Giá 700đ/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+
+            <div class="col-sm-3 mb-5 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-LA.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style3">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h6>Sài Gòn <=> Long An</h6>
+                    <h6>Giá 450k/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-5 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-MuiNe.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style3">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h6>Sài Gòn <=>Mũi Né</h6>
+                    <h6>Giá 1tr5/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-5 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-AG.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style3">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h6>Sài Gòn <=> An Giang</h6>
+                    <h6>Giá 2tr5/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 mb-5 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/xeditinh/SG-PT.jpeg" alt="">
+                <button class="btn btn-outline-success btn-style3">
+                    <span class="align-middle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>&ensp;0797933678</span>
+                </button>
+                <div class="col-10 rounded-3 div-style">
+                    <h6>Sài Gòn <=> Phan Thiết</h6>
+                    <h6>Giá 1750k/1 Chiều. xe riêng, giá trọn gói</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Du lich -->
+    <div id="dulich" class="d-flex justify-content-center dulich-background">
+        <div class="container row">
+            <div class="text-center mt-4 mb-3">
+                <h3 style="color: #eac289;">CÁC ĐỊA ĐIỂM DU LỊCH</h3>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/1.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/2.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/3.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/4.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/5.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/6.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/7.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/8.jpg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/9.png" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/10.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/11.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+            <div class="col-sm-3 col-6 mb-sm-5 mb-3 btn-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="xeditinh" src="./img/diadiemdulich/12.jpeg" alt="">
+                <div class="col-sm-11 col-10 rounded-3 div-style1">
+                    <h6>0797933678</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tổng đài -->
+    <div id="tongdai" class="bg-tongdai d-flex justify-content-center">
+        <div class="container row">
+            <div class="col-sm-6 mt-4 mb-3 text-light">
+                <h4>Tổng Đài Gọi Xe Taxi GIÁ RẺ: 0797933678</h4>
+                <p>Để đặt xe vui lòng kết nối trực tiếp với chúng tôi qua:</p>
+            </div>
+            <div class="col-sm-6 mt-4 mb-3 d-flex justify-content-around">
+                <div class="text-center text-light">
+                    <!-- <a href="https://zalo.me/0797933678" ></a> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <p class="mt-2">0797933678</p>
+                </div>
+                <div class="text-center text-light">
+                    <!-- <a href="https://zalo.me/0797933678" ></a> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                    </svg>
+                    <p class="mt-2">Messenger</p>
+                </div>
+                <div class="text-center text-light">
+                    <!-- <a href="https://zalo.me/0797933678" > -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+                    </svg>
+                    <p class="mt-2">Zalo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liên hệ -->
+    <div id="lienhe" class="bg-lienhe d-flex justify-content-center">
+        <div class="container row">
+            <div class="col-sm-6 mt-4 mb-3 text-light">
+                <h3>Liên Hệ Chúng Tôi</h3>
+                <p>Gọi Xe Taxi 247 chuyên các dịch vụ sân bay trọn gói giá rẻ. Chúng tôi cam kết dịch vụ Taxi Sân Bay, Taxi đi tỉnh đường dài, du lịch bằng dòng xe đầu từ mới 100%, dòng xe 4, 7, 16 chỗ sang trọng với chính sách giá cam kết rẻ nhất và chất lượng phục vụ tốt nhất. Taxi Bình Dương – Taxi Thủ Dầu Một – Taxi Đường Dài Giá Tốt Nhất</p>
+                <div class="row d-flex align-items-center">
+                    <div class="col-2 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                            <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                    </div>
+                    <div class="col-10">
+                        <p>Hotline: 0797933678</p>
+                        <p>Zalo: 0797933678</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-2 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-send-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738-7.494 7.494 1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602z"/>
+                            <path fill-rule="evenodd" d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+                        </svg>
+                    </div>
+                    <div class="col-10">
+                        <p>Email on us:</p>
+                        <p>info@goixetaxi247.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mt-4 mb-3">
+                <h3 class="text-light">Đặt Xe Trực Tuyến</h3>
+                <div class="container-fluid bg-light mt-2 form-opacity">
+                    <div class="row">
+                        <p class="form-title fw-bold text-light text-center">
+                            Đặt xe Trực Tuyến-Đặt Xe Đi Tỉnh giá rẻ-Đến Ngay Sau 2 Phút Đặt
+                        </p>
+                    </div>
+                
+                    <form method="post">
+                        <p>Số điện thoại</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="" placeholder="Nhập số điện thoại" value=''>
+                        <p>Điểm đón</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="" placeholder="Nhập điểm đón" value=''>
+                        <p>Điểm đến</p>
+                        <div class="border border-secondary d-flex justify-content-center p-1 text-danger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control mb-3" name="phone" placeholder="Nhập điểm đến" value=''>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Giờ đón</p>
+                                <div class="border border-secondary d-flex justify-content-center p-1 time-color">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-day" viewBox="0 0 16 16">
+                                        <path d="M4.684 11.523v-2.3h2.261v-.61H4.684V6.801h2.464v-.61H4v5.332zm3.296 0h.676V8.98c0-.554.227-1.007.953-1.007.125 0 .258.004.329.015v-.613a2 2 0 0 0-.254-.02c-.582 0-.891.32-1.012.567h-.02v-.504H7.98zm2.805-5.093c0 .238.192.425.43.425a.428.428 0 1 0 0-.855.426.426 0 0 0-.43.43m.094 5.093h.672V7.418h-.672z"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                                    </svg>
+                                </div>
+                                
+                                <input id="datepicker2"/>
+                                <script>
+                                    // Hàm để lấy thời gian hiện tại và định dạng theo chuẩn "Y-m-d H:i"
+                                    function getFormattedDate() {
+                                        const date = new Date();
+                                        const year = date.getFullYear();
+                                        const month = String(date.getMonth() + 1).padStart(2, '0');
+                                        const day = String(date.getDate()).padStart(2, '0');
+                                        const hours = String(date.getHours()).padStart(2, '0');
+                                        const minutes = String(date.getMinutes()).padStart(2, '0');
+                                        return `${year}-${month}-${day} ${hours}:${minutes}`;
+                                    }
+        
+                                    // Thiết lập giá trị mặc định cho thẻ input
+                                    document.getElementById('datepicker2').value = getFormattedDate();
+                                    flatpickr('#datepicker2', {
+                                        enableTime: true, // Cho phép chọn thời gian
+                                        dateFormat: "Y-m-d H:i", // Định dạng ngày và thời gian
+                                        time_24hr: true, // Định dạng giờ theo 24 giờ
+                                        static: true, // Đặt input để làm input readonly
+                                        locale: "vi" // Định dạng theo ngôn ngữ việt
+                                    });
+                                </script>
+                                
+                                
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Loại xe</p>
+                                <div class="border border-secondary d-flex justify-content-center p-1 text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                                    </svg>
+                                </div>
+                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>Xe 4 chỗ</option>
+                                    <option value="1">Xe 5 chỗ</option>
+                                    <option value="2">Xe 7 chỗ</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <input type="submit" class="form-control btn btn-success mt-3 mb-3" name="submit" value="Đặt xe ngay">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bản quyền -->
+    <div class="d-flex justify-content-center text-light" style="background-color: #008716;">
+        <span class="mt-2 mb-2">© Bản quyền thuộc về Taxi | Thiết kế và duy trì bởi BangThong.com</span>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
