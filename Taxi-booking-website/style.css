@@ -97,8 +97,30 @@
     padding: 2%;
 }
 
-.bg-tongdai{
-    background-color: #878100;
+#tongdai {
+    background-color: #cef;
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+#tongdai h4 {
+    color: #333;
+    font-weight: bold; 
+}
+
+#tongdai p {
+    color: #666; 
+}
+
+#tongdai .bi {
+    color: #007bff; 
+}
+
+#tongdai .text-center {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 10px;
 }
 
 .bg-lienhe{
